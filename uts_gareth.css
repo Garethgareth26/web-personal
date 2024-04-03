@@ -8,11 +8,10 @@ body {
 
 .wrap {
     width: 100%;
-    margin: 20px auto;
+    height: auto;
 }
 
 header {
-    height: auto;
     padding: 20px;
     font-size: 15px;
     color: white ;
@@ -20,10 +19,7 @@ header {
     font-weight: 400;
     font-style: normal;
     background: linear-gradient(to right, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
-}
-
-p {
-    margin-bottom: 5px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
 }
 
 .columns {
@@ -31,7 +27,6 @@ p {
     flex-flow: row wrap;
     justify-content: center;
     margin: 5px 0;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 .column {
@@ -46,21 +41,23 @@ p {
 .column:first-child {
     margin-left: 0.5;
     border-bottom: 50px solid #eeba30;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
 }
 
 .column:nth-last-child(2) {
     border-bottom: 50px solid rgba(174,0,1);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+p {
+    margin-bottom: 5px;
 }
 
 .column:last-child {
     margin-left: 0;
     border-bottom: 50px solid #d3a625;
     text-align: center;
-}
-
-footer {
-    text-align: center;
-    color: aliceblue;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
 }
 
 .gambar{
@@ -70,12 +67,18 @@ footer {
     border: 3px solid gold;
 }
 
+footer {
+    text-align: center;
+    color: aliceblue;
+}
+
 .wrap2 {
     display: flex;
     justify-content: center;
     font-family: "Silkscreen", sans-serif;
     font-weight: 400;
     font-style: normal;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.9);
 }
 
 .sosmed {
@@ -101,7 +104,6 @@ footer {
 
 @media screen and (max-width:980px) {
     .columns .column {
-        margin-bottom: 5px;
         flex-basis: 40%;
 }
     .columns .column:last-child {
@@ -136,7 +138,8 @@ footer {
     opacity: 0.8;
 }
 
-.sosmed:hover {background-color: #ffd47f;}
-
-
-
+.sosmed:hover {
+    background-color: #ffd47f;
+    transform: scale3d(1.6, 1.1, 0.1);
+    transition: 0.2s ease-in-out;
+}
