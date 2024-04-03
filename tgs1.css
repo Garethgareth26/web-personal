@@ -1,0 +1,12 @@
+body {
+    background-color: yellow;
+    font-family: Arial;
+}
+h2 {
+    border-bottom: 2px solid black;
+    padding-bottom: 5px;
+}
+.isi-dokumen {
+    font-size: 24px;
+    color: blue;
+}

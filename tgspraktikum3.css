@@ -1,0 +1,31 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+.parent{
+    display: flex;
+    justify-content: center;
+    font-family: "Montserrat", sans-serif;
+}
+.anak{
+    width: 60%;
+    display: flex;
+    align-items: center;
+}
+
+.nama{
+    font-size: 40px;
+}
+.gambar{
+    display: block;
+    width: 480px;
+    height: auto;
+    margin-left: auto;
+    margin-right: 3%;
+    border-radius: 20px;
+}
+.isi_teks{
+    line-height: 150%;
+    font-size: 16px;
+    text-align: justify;
+}
